@@ -1,0 +1,41 @@
+{
+  "name": "simpometer",
+  "version": "1.0.0",
+  "description": "Measure your SIMP levels",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server/",
+    "start": "babel-node app.js --exec",
+    "dev": "nodemon app.js",
+    "devbabel": "nodemon app.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Largnaster/SimpOmeter.git"
+  },
+  "keywords": [
+    "SIMP",
+    "hobby",
+    "learning",
+    "twitch",
+    "extension",
+    "html",
+    "js",
+    "css"
+  ],
+  "author": "Largnaster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Largnaster/SimpOmeter/issues"
+  },
+  "homepage": "https://github.com/Largnaster/SimpOmeter#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

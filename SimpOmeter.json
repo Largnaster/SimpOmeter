@@ -3,7 +3,30 @@
   "backendCommand": "",
   "backendFolderName": "",
   "certificateExceptions": [],
-  "extensionViews": [],
+  "extensionViews": [
+    {
+      "channelId": "68813364",
+      "configurationAnchor": "panel",
+      "displayChannelName": "largnaster",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "1",
+      "isPopout": false,
+      "label": "Test",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "panel",
+      "viewerType": "Broadcaster"
+    }
+  ],
   "manifest": {
     "anchor": "panel",
     "assetUrls": [],
@@ -56,8 +79,8 @@
     "whitelistedConfigUrls": [],
     "whitelistedPanelUrls": []
   },
-  "frontendCommand": "",
-  "frontendFolderName": "",
+  "frontendCommand": "npm run start",
+  "frontendFolderName": "public",
   "name": "SimpOmeter",
   "usingRandomFrontendHostingPort": false,
   "version": 3
