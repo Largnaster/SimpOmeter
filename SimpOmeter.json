@@ -1,7 +1,7 @@
 {
   "allowHttpBackend": false,
-  "backendCommand": "",
-  "backendFolderName": "",
+  "backendCommand": "ebs",
+  "backendFolderName": "ebs",
   "certificateExceptions": [],
   "extensionViews": [
     {
@@ -79,8 +79,8 @@
     "whitelistedConfigUrls": [],
     "whitelistedPanelUrls": []
   },
-  "frontendCommand": "npm run start",
-  "frontendFolderName": "public",
+  "frontendCommand": "npm run host",
+  "frontendFolderName": "C:\\Users\\Bryann Torres\\3D Objects\\Hobbies\\Twitch\\SimpOmeter",
   "name": "SimpOmeter",
   "usingRandomFrontendHostingPort": false,
   "version": 3
