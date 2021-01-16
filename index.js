@@ -1,5 +1,4 @@
-("use strict");
-import HtmlWebpackPlugin from "html-webpack-plugin";
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // Set the components that will be used
 let entryPoints = {
@@ -13,6 +12,11 @@ let entryPoints = {
     outputHtml: "config.html",
     build: true,
   },
+  Mobile: {
+    path: "./src/Mobile.js",
+    outputHtml: "mobile.html",
+    build: true,
+  }
 };
 
 let entry = {};

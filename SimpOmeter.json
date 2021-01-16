@@ -79,7 +79,7 @@
     "whitelistedConfigUrls": [],
     "whitelistedPanelUrls": []
   },
-  "frontendCommand": "npm run host",
+  "frontendCommand": "npm run serve",
   "frontendFolderName": "C:\\Users\\Bryann Torres\\3D Objects\\Hobbies\\Twitch\\SimpOmeter",
   "name": "SimpOmeter",
   "usingRandomFrontendHostingPort": false,

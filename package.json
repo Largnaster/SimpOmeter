@@ -1,13 +1,15 @@
+
 {
   "name": "simpometer",
   "version": "1.0.0",
   "description": "Measure your SIMP levels",
   "main": "index.js",
   "scripts": {
+    "_coment": "Certificate generation was made with 'mkcert localhost'",
     "test": "jest",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "cert": "./bin/generate_cert.sh server",
+    "serve": "webpack-cli serve --mode development",
     "host": "webpack serve --mode development"
   },
   "repository": {
