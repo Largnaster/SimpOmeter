@@ -1,10 +1,10 @@
-import fs from "fs";
-import Hapi from "hapi";
-import path from "path";
-import Boom from "boom";
-import color from "color";
-import ext from "commander";
-import jwt, { JsonWebTokenError } from "jsonwebtoken";
+const fs = require('fs');
+const Hapi = require('hapi');
+const path = require('path');
+const Boom = require('boom');
+const color = require('color');
+const ext = require('commander');
+const jsonwebtoken = require('jsonwebtoken');
 
 // Developer rig uses self-signed certifications. Node doesen't accept them
 // by default. Do not use this in production
@@ -59,7 +59,9 @@ if (
     key: fs.readFileSync(serverPathRoot + ".key"),
   };
 }
-const server = new Hapi.Server(serverOptions)(async () => {
+const server = new Hapi.Server(serverOptions);
+
+(async () => {
   // Handle a viewer request to cycle the color
   server.route({
     method: "POST",

@@ -1,9 +1,32 @@
 {
   "allowHttpBackend": false,
-  "backendCommand": "ebs",
-  "backendFolderName": "ebs",
+  "backendCommand": "node backend -c \"l4vx5n64gix5r22vjsezceeudiyz84\" -s \"MhQDzwwJVnoJV9uUvNRhK5xW7T0dC2qNRVYMxsXMvh4=\"",
+  "backendFolderName": "services",
   "certificateExceptions": [],
-  "extensionViews": [],
+  "extensionViews": [
+    {
+      "channelId": "68813364",
+      "configurationAnchor": "panel",
+      "displayChannelName": "largnaster",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "1",
+      "isPopout": false,
+      "label": "aaa",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "panel",
+      "viewerType": "Broadcaster"
+    }
+  ],
   "manifest": {
     "anchor": "panel",
     "assetUrls": [],
@@ -56,7 +79,7 @@
     "whitelistedConfigUrls": [],
     "whitelistedPanelUrls": []
   },
-  "frontendCommand": "npm run start",
+  "frontendCommand": "",
   "frontendFolderName": "public",
   "name": "SimpOmeter",
   "usingRandomFrontendHostingPort": false,

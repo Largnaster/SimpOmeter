@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Extension helper -->
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="viewer.js" type="text/javascript"></script>
+
+    <title>Live Config</title>
+</head>
+<body>
+    <div id="app" class="full-height"></div>
+    <h2>Un titulo</h2>
+    <p>Algun texto</p>
+    <div><input type="button" id="cycle" disabled="disabled" value="Valor"></div>
+    <div style="float: left; position: relative; left: 50%;">
+        <div id="color" style="border-radius: 50px; transition: background-color 0.5s ease; margin-top: 30px;width: 100px; height: 100px; background-color: #6441A4; float: left; position: relative; left: -50%">
+        </div>
+    </div>
+    <div id="list"></div>
+</body>
+</html>
