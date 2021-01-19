@@ -17,13 +17,13 @@
         "width": 1280,
         "height": 720
       },
-      "id": "1",
+      "id": "2",
       "isPopout": false,
-      "label": "aaa",
+      "label": "Comp",
       "linked": false,
       "linkedUserId": "",
       "orientation": "Portrait",
-      "type": "panel",
+      "type": "component",
       "viewerType": "Broadcaster"
     }
   ],
@@ -35,7 +35,7 @@
     "canInstall": true,
     "configUrl": "https://localhost:8080/config.html",
     "configurationLocation": "none",
-    "description": "",
+    "description": "La idea inicial de la extensión es que esta pueda llevar un registro de las horas vistas de un stream y en base a eso poder medir el nivel de SIMP.\nSe espera para futuras versiones implementar más variables que permitan determinar el nivel de SIMP con mayor precisión.\nNOTA: esta extensión es un proyecto en solitario sin ánimos de lucro, es un hobbie por lo que los avances dependerán exclusivamente del desarrollador.",
     "eulaTosUrl": "",
     "hasChatSupport": false,
     "iconUrl": "",
@@ -52,15 +52,16 @@
     "sku": "",
     "state": "Testing",
     "subscriptionsSupportLevel": "none",
-    "summary": "",
+    "summary": "Mide tus niveles de SIMP en el canal (en desarrollo)",
     "supportEmail": "arleyro91@gmail.com",
     "vendorCode": "",
     "version": "0.0.1",
-    "viewerSummary": "",
+    "viewerSummary": "¿Cuál es tu nivel de SIMP?",
     "viewerUrl": "https://localhost:8080/panel.html",
     "viewerUrls": {
       "mobile": "https://localhost:8080/mobile.html",
-      "panel": "https://localhost:8080/panel.html"
+      "panel": "https://localhost:8080/panel.html",
+      "component": "https://localhost:8080/video_component.html"
     },
     "views": {
       "mobile": {
@@ -70,6 +71,20 @@
         "viewerUrl": "https://localhost:8080/panel.html",
         "height": 300,
         "canLinkExternalContent": false
+      },
+      "component": {
+        "viewerUrl": "https://localhost:8080/video_component.html",
+        "aspectWidth": 0,
+        "aspectHeight": 0,
+        "aspectRatioX": 300,
+        "aspectRatioY": 200,
+        "scalePixels": 1024,
+        "targetHeight": 3000,
+        "size": 0,
+        "zoom": false,
+        "zoomPixels": 0,
+        "canLinkExternalContent": false,
+        "autoScale": true
       },
       "config": {
         "viewerUrl": "https://localhost:8080/config.html",

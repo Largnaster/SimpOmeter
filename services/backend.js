@@ -4,7 +4,7 @@ const path = require('path');
 const Boom = require('boom');
 const color = require('color');
 const ext = require('commander');
-const jsonwebtoken = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
 // Developer rig uses self-signed certifications. Node doesen't accept them
 // by default. Do not use this in production
@@ -60,26 +60,35 @@ if (
   };
 }
 const server = new Hapi.Server(serverOptions);
-
+console.log("Begins the async");
 (async () => {
   // Handle a viewer request to cycle the color
+  console.log("Begins POST or something")
   server.route({
     method: "POST",
     path: "/color/cycle",
-    handler: colorCycleHandler,
+    options: {
+      handler: colorCycleHandler,
+    }
   });
 
+  console.log("This is the GET method")
   // Handle a new viewer requesting the color
   server.route({
     method: "GET",
-    path: "color/query",
-    handler: colorQueryHandler,
+    path: "/color/query",
+    options: {
+      handler: colorQueryHandler,
+    }
   });
 
+  console.log("Starts the server")
   // Start server
   await server.start();
   console.log(STRINGS.serverStarted, server.info.uri);
-})();
+})().catch((error) => {
+  console.log(error)
+});
 
 function usingValue(name) {
   return `Using enviroment variable for ${name}`;
