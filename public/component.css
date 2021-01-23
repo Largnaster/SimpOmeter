@@ -1,13 +1,48 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 body{
     background-color: #353535;
+    font-size: 8vh;
+    color: white;
+    margin: 0.5em 2em;
 }
 
 h1 {
     color: white;
-    font-size: xx-large;
+}
+
+button {
+    color: white;
+    font-size: 10vh;
+    background-color: #323232;
+    padding: 0 0.2em;
+    margin-top: 0.2em;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    border: 1 solid #303030;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+button:active {
+    transform: translateY(2px);
+}
+
+/* Estilos para las tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #454545;
 }

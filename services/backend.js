@@ -60,10 +60,8 @@ if (
   };
 }
 const server = new Hapi.Server(serverOptions);
-console.log("Begins the async");
 (async () => {
   // Handle a viewer request to cycle the color
-  console.log("Begins POST or something")
   server.route({
     method: "POST",
     path: "/color/cycle",
@@ -72,7 +70,6 @@ console.log("Begins the async");
     }
   });
 
-  console.log("This is the GET method")
   // Handle a new viewer requesting the color
   server.route({
     method: "GET",
@@ -82,7 +79,6 @@ console.log("Begins the async");
     }
   });
 
-  console.log("Starts the server")
   // Start server
   await server.start();
   console.log(STRINGS.serverStarted, server.info.uri);
